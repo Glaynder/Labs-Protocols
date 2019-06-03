@@ -1,0 +1,6 @@
+[0304/171420.067:ERROR:crash_report_database_win.cc(569)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0304/171420.070:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0304/171420.071:ERROR:crash_report_database_win.cc(569)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0304/174331.958:ERROR:crash_report_database_win.cc(569)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: Системе не удается найти указанный путь. (0x3)
+[0304/174331.962:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: Канал был закрыт. (0x6D)
+[0304/174331.963:ERROR:crash_report_database_win.cc(569)] CreateDirectory C:\Program Files (x86)\Easthas\Reports\Dump: Системе не удается найти указанный путь. (0x3)
