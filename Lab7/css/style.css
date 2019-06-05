@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import "responsive.css" screen;
+
+body {
+	background: linear-gradient(to top right, #185C94 30%, #90B9DB 70%);
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	position: relative;
+	width: 500px;
+	text-align: center;
+	padding-left: 30%;
+}
+
+p {
+	font-family: font-family: 'Times New Roman', Times, serif;
+	font-size: 18px;
+	position: relative;
+	width: 500px;
+	text-align: center;
+	padding-left: 30%;
+}
+
+.topbutton {
+	float: right;
+}
+
+.topbutton:hover {
+	color: #F5F5F5;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.navigation nav ul{
+	display: flex;
+	background: linear-gradient(to top, #185C94, #90B9DB);
+	border: 2px solid #F5F5F5;
+	color: #767474;
+	border-radius: 11px 11px 11px 11px;
+	box-shadow: 0px 10px 61px -9px rgba(0,0,0,0.75);
+}
+
+.navigation nav ul li{
+	margin: 30px;
+	list-style: none;
+	padding-left: 40px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.navigation nav ul li .circle{
+	text-decoration: none;
+	padding: 10px;
+	color: #F5F5F5;
+	border: 2px solid #F5F5F5;
+	border-radius: 50%;
+}
+
+.navigation nav ul li:nth-child(2){
+	border-left: 1px solid #F5F5F5;
+}
+
+.navigation nav ul li:nth-child(3){
+	border-left: 1px solid #F5F5F5;
+}
+
+.navigation nav ul li:nth-child(4){
+	border-left: 1px solid #F5F5F5;
+}
+
+.navigation nav ul li:nth-child(5){
+	border-left: 1px solid #F5F5F5;
+}
+
+.navigation nav ul li.active a{
+    border-top: 4px solid #F5F5F5;
+}
+
+.navigation nav ul li .box:hover{
+	border-top: 4px solid #F5F5F5;
+}
+
+.navigation nav ul li:nth-child(6){
+	position: absolute;
+	right: 195px;
+}
+
+.navigation nav ul li:nth-child(7){
+	position: absolute;
+	right: 130px;
+}
+
+.navigation nav ul li:nth-child(8){
+	position: absolute;
+	right: 65px;
+}
+
+.box{
+	text-decoration: none;
+	color: #F5F5F5;
+}
+
+#slider {
+	position: relative; 
+	overflow: hidden; 
+	width: 600px; 
+	height: 320px; 
+	margin: 20px auto; 
+	padding: 0; 
+	list-style: none;
+}
+
+.slide {
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	transition: all 1s ease-in 0.1s; 
+	left:0;
+}
+
+.slide img {
+	width: 100%;
+}
+
+.arrows {
+	position: relative; 
+	margin: 0 auto; 
+	width: 600px;
+}
+
+.arrow {
+	position: absolute; 
+	cursor: pointer;
+}
+
+.no_active {
+	color: red;
+}
+
+.next {
+	right: 0;
+}

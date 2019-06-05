@@ -1,0 +1,86 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <title>Lab2</title>
+ <link rel="stylesheet" href="css/style.css" type="text/css">
+ <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<section class="navigation" id="navigation">
+	<nav>
+		<ul>
+			<li><a class="circle" href="index.html"><i class="fas fa-home"></i></a></li>
+			<li><a class="box" href="news.html">News</a></li>
+			<li><a class="box" href="photo.html">Photo</a></li>
+			<li><a class="box" href="rozklad.html">Rozklad</a></li>
+			<li><a class="box" href="slider.html">Portfolio</a></li>
+			<li><a class="circle" href="#"><i class="fas fa-thumbs-up"></i></a></li>
+			<li><a class="circle" href="https://twitter.com/?lang=ru"><i class="fab fa-twitter"></i></a></li>
+			<li><a class="circle" href="https://plus.google.com/discover"><i class="fab fa-google-plus-g"></i></a></li>
+		</ul>
+	</nav>
+	<!--[if lte IE 7]>
+		<p>У вас браузер IE7 или ниже.</p>
+	<![endif]-->
+</section>
+
+ <section class="Portfolio" id="portfolio">
+<ul id="slider">
+   <li class="slide active">
+      <img src="images/1.jpg">
+   </li>
+   <li class="slide">
+      <img src="images/2.jpg">
+    </li>
+    <li class="slide">
+       <img src="images/3.jpg">
+    </li>
+</ul>
+
+<div class="arrows">
+    <span class="arrow next" id="next">Вправо</span>
+    <span class="arrow prew" id="prew">Влево</span>
+</div>
+</section>
+
+<script>
+var next = document.getElementById('next');
+var prew = document.getElementById('prew');
+
+var slides = document.getElementsByClassName('slide');
+for(var i=0; i<slides.length; i++) {
+   slides[i].style.zIndex = slides.length - i;
+}
+
+next.onclick = function () {
+    var activeEl = document.querySelector('.active');
+    if(activeEl.nextElementSibling) {
+       activeEl.style.left = "-100%";
+       activeEl.classList.remove('active');
+       activeEl.nextElementSibling.classList.add('active');
+       this.classList.remove('no_active');
+       prew.classList.remove('no_active');
+       if(!activeEl.nextElementSibling.nextElementSibling) {
+          this.classList.add('no_active');
+       }
+    }
+}
+prew.onclick = function () {
+    var activeEl = document.querySelector('.active');
+    if(activeEl.previousElementSibling) {
+       activeEl.previousElementSibling.style.left = "0%";
+       activeEl.classList.remove('active');
+       activeEl.previousElementSibling.classList.add('active');
+       this.classList.remove('no_active');
+       next.classList.remove('no_active');
+       if(!activeEl.previousElementSibling.previousElementSibling) {
+          this.classList.add('no_active');
+       }
+    }
+}
+</script>
+
+</body>
+</html>

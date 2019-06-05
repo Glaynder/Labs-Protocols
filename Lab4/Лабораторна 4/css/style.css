@@ -1,0 +1,35 @@
+body {
+	background: linear-gradient(to top right, #185C94 30%, #90B9DB 70%);
+}
+
+.menu {
+	list-style: none;
+	font-size: 18px;
+	position: relative;
+}
+
+.menu .rozklad {
+	color: red;
+}
+
+#navbar li { 
+	display: inline; 
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	position: relative;
+	width: 500px;
+	text-align: center;
+	padding-left: 30%;
+}
+
+p {
+	font-family: font-family: 'Times New Roman', Times, serif;
+	font-size: 18px;
+	position: relative;
+	width: 500px;
+	text-align: center;
+	padding-left: 30%;
+}
